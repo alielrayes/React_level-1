@@ -1,0 +1,179 @@
+/* =============
+ table of contents
+===============
+
+0. global styles
+1. ul class .flex
+      1.1 sub HTML + css + JavaScript
+      1.2 sub sub of CSS
+
+
+2. main & footer
+3. header of mobile
+ 
+*/
+
+/* ===============
+   0. global style
+================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+
+  font-family: sans-serif;
+
+  text-decoration: none;
+  list-style: none;
+
+  letter-spacing: 1px;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #1b1b1b;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 25px;
+}
+
+/* ===============
+   1.  ul class .flex
+================ */
+
+.hide-when-mobile {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex {
+  display: flex;
+}
+
+.main-list {
+  padding: 20px;
+  font-size: 19px;
+  position: relative;
+}
+
+.main-link {
+  padding: 8px 15px;
+}
+
+.main-link:hover {
+  color: cyan;
+  box-shadow: 0 0 5px cyan;
+  border-radius: 5px;
+}
+
+/* =======================================
+   1.1 sub HTML + css + JavaScript
+======================================== */
+
+.sub-ul {
+  display: none;
+
+  position: absolute;
+  top: 69px;
+  left: -15px;
+  border-top: 1px solid cyan;
+
+  background-color: #1b1b1b;
+
+  border-radius: 5px;
+  padding: 5px;
+
+  width: 155px;
+}
+
+.sub-of-js {
+  left: 10px;
+}
+
+.sub-ul li {
+  padding: 8px 0;
+  font-size: 17px;
+  border-bottom: 1px solid black;
+}
+
+.sub-ul li a:hover {
+  color: cyan;
+  font-weight: bold;
+}
+
+.main-list:hover .sub-ul {
+  display: block;
+}
+
+/* =======================================
+   1.2 sub sub of CSS
+======================================== */
+
+.sub-sub-ul {
+  position: absolute;
+  top: 80px;
+  left: 153px;
+
+  border-top: 1px solid cyan;
+
+  background-color: #1b1b1b;
+
+  border-radius: 5px;
+  padding: 5px;
+
+  width: 150px;
+
+  display: none;
+}
+
+.mini-projects:hover .sub-sub-ul {
+  display: block;
+}
+
+
+/* ==================
+    2. main & footer
+===================== */
+main{
+  color: #1b1b1b;
+
+  height: calc(100vh - 128.64px);
+
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  text-align: center;
+}
+
+footer{
+  background-color: #1b1b1b;
+
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ==================
+    3. header of mobile
+===================== */
+.show-when-mobile {
+  display: none;
+}
