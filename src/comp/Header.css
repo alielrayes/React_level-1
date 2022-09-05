@@ -1,0 +1,37 @@
+
+.hide-when-mobile {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ==================
+    3. header of mobile
+===================== */
+.show-when-mobile {
+  display: none;
+}
+
+
+@media (max-width: 800px) {
+  .show-when-mobile {
+    display: block;
+  }
+  
+  .hide-when-mobile {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
