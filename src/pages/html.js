@@ -3,15 +3,14 @@
 
 import Header from '../comp/header';
 import Footer from '../comp/Footer';
+import MainContent from '../comp/MainContent';
 
 
 const Html = () => {
   return (
     <>
     <Header />
-    <main>
-      HTML Page
-    </main>
+    <MainContent pageName="HTML Page"  />   
     <Footer />
   </>
   );

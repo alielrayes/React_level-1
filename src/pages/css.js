@@ -1,5 +1,6 @@
 import Header from '../comp/header';
 import Footer from '../comp/Footer';
+import MainContent from '../comp/MainContent';
 
 
 
@@ -11,9 +12,9 @@ const Css = () => {
    
    
    
-    <main>
-      CSS Page
-    </main>
+    <MainContent pageName="CSS Page" />  
+
+
     <Footer />
   </>
   );
