@@ -7,7 +7,6 @@ import Javascript from "./pages/javascript";
 function App() {
   return (
     <div className="App">
-      <h1 style={{ color: "red" }}>Welcome to React Router!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/html" element={<Html />} />
