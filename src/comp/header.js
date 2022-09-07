@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import './Header.css';
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -14,7 +14,7 @@ const Header = () => {
             <NavLink className="main-link" to="/html">
               HTML
             </NavLink>
-            {/* <ul className="sub-ul">
+            <ul className="sub-ul">
               <li>
                 <a href="">Full Course</a>
               </li>
@@ -24,13 +24,13 @@ const Header = () => {
               <li>
                 <a href="">learn in 1h</a>
               </li>
-            </ul> */}
+            </ul>
           </li>
           <li className="main-list">
             <NavLink className="main-link" to="/css">
               CSS
             </NavLink>
-            {/* <ul className="sub-ul">
+            <ul className="sub-ul">
               <li>
                 <a href="">Full Course</a>
               </li>
@@ -51,22 +51,22 @@ const Header = () => {
                   </li>
                 </ul>
               </li>
-            </ul> */}
+            </ul>
           </li>
           <li className="main-list">
             <NavLink className="main-link" to="/javascript">
               JavaScript
             </NavLink>
-            {/* <ul className="sub-ul sub-of-js">
+            <ul className="sub-ul sub-of-js">
               <li>
                 <a href="">coming soon🔥</a>
               </li>
-            </ul> */}
+            </ul>
           </li>
         </ul>
       </header>
 
-      <header   className="show-when-mobile ">
+      <header className="show-when-mobile ali">
         <h1>c4a.dev</h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
@@ -80,7 +80,7 @@ const Header = () => {
             <input id="html" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">Full Course</a>
+                <NavLink to="/html">Full Course</NavLink>
               </li>
               <li>
                 <a href="">Crash Course</a>
@@ -97,7 +97,7 @@ const Header = () => {
             <input id="css" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">Full Course</a>
+                <NavLink to="/css">Full Course</NavLink>
               </li>
               <li>
                 <a href="">CSS Examples</a>
@@ -128,7 +128,7 @@ const Header = () => {
             <input id="js" type="checkbox" />
             <ul className="sub-div">
               <li>
-                <a href="">coming soon🔥</a>
+                <NavLink to="/javascript">coming soon🔥</NavLink>
               </li>
             </ul>
           </div>
